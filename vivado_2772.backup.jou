@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan  6 17:29:01 2026
+# Process ID: 2772
+# Current directory: C:/Users/Karina/Desktop/Õ»–/BM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1740 C:\Users\Karina\Desktop\Õ»–\BM\BM.xpr
+# Log file: C:/Users/Karina/Desktop/Õ»–/BM/vivado.log
+# Journal file: C:/Users/Karina/Desktop/Õ»–/BM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Karina/Desktop/Õ»–/BM/BM.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+write_project_tcl -force -all_properties ./restore_project.tcl
+close_project
+source ./restore_project.tcl
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8 -scripts_only
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_1]
+update_ip_catalog
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY rebuilt [get_runs synth_1]
+update_ip_catalog
+launch_simulation
+source test.tcl
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_1]
+update_ip_catalog
+update_ip_catalog
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY rebuilt [get_runs synth_1]
+update_ip_catalog
+update_ip_catalog
